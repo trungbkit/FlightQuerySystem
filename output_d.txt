@@ -1,0 +1,1 @@
+(PRINT-ALL ?f (FLIGHT ?f) (ATIME ?f Huế 20:00HR) (DTIME ?f ?s ?dt))

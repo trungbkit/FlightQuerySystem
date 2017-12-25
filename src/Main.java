@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 public class Main {
     private static String readInput() {
         String input = null;
-        File file = new File("../input/input.txt");
+        File file = new File("../input.txt");
         try {
             FileInputStream fis = new FileInputStream(file);
             byte[] data = new byte[(int) file.length()];
@@ -42,19 +42,19 @@ public class Main {
             ASTGeneration astGeneration = new ASTGeneration();
             S s = (S) astGeneration.visit(sContext);
 
-            PrintWriter outputB = new PrintWriter("output_b.txt", "UTF-8");
+            PrintWriter outputB = new PrintWriter("../output_b.txt", "UTF-8");
             outputB.write(syntax);
             outputB.close();
 
-            PrintWriter outputC = new PrintWriter("output_c.txt", "UTF-8");
+            PrintWriter outputC = new PrintWriter("../output_c.txt", "UTF-8");
             outputC.write(s.toLogicalForm());
             outputC.close();
 
-            PrintWriter outputD = new PrintWriter("output_d.txt", "UTF-8");
+            PrintWriter outputD = new PrintWriter("../output_d.txt", "UTF-8");
             outputD.write(s.toSematic());
             outputD.close();
 
-            PrintWriter outputE = new PrintWriter("output_e.txt", "UTF-8");
+            PrintWriter outputE = new PrintWriter("../output_e.txt", "UTF-8");
             outputE.write(query.printAll(s));
             outputE.close();
 

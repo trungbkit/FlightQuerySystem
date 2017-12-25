@@ -1,0 +1,1 @@
+(WH f1: (& (FLIGHT f1)(DEST f1(NAME h1 "Huế")))(ARRIVE a1(NAME t1 "20:00HR")))
