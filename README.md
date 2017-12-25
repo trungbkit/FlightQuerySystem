@@ -13,7 +13,7 @@ Output: `output_*.txt`
 ## Windows
 
 ```bash
-clean.cmd
-comp.cmd
-run.cmd
+clean
+comp
+run
 ```
